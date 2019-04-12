@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Delor Montessori School | About</title>
+    {{> head}}
+  </head>
+  <body style="background-image: url({{background_image type=image tag=false required=false}});">
+    {{> navigation}}
+    {{#section contact label="Contact Page"}}
+    <section class="section">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-half">
+            Map Here
+          </div>
+          <div class="column is-half">
+            <h1 class="title">{{ title }}</h1>
+            <div class="content">{{info type=html }}</div>
+            {{#form contact_us subject="Contact Delor" submit="Send Message"}}
+            {{ name class="input"}}
+            {{ email }}
+            {{message long=true}}
+            {{/form}}
+          </div>
+        </div>
+      </div>
+    </section>
+    {{/section}}
+  </body>
+  {{> footer}}
+  {{> javascript}}
+</html>

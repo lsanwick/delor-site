@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Delor Montessori School | About</title>
+    {{> head}}
+  </head>
+  <body style="background-image: url({{background_image type=image tag=false required=false}});">
+    {{> navigation}}
+    {{#section about}}
+    <section class="section">
+      <div class="container">
+        <h1 class="title">{{ title }}</h1>
+        <div class="columns is-multiline">
+          <div class="column is-full">
+            <div class="header-image-wrapper">{{image type=image class="image"}}</div>
+          </div>
+          <div class="column is-three-quarters">
+            <div class="content">{{content type=html}}</div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="content">{{ quote type=html }}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{/section}}
+  </body>
+  {{> footer}}
+  {{> javascript}}
+</html>
