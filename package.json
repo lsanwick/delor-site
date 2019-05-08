@@ -7,7 +7,7 @@
     "start": "vapid start ."
   },
   "dependencies": {
-    "@vapid/cli": "^0.7.7",
+    "@vapid/cli": "^0.8.1",
     "bulma": "^0.7.4"
   }
 }
