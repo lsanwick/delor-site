@@ -8,9 +8,13 @@
 //
 // To learn more, visit https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/
 
+function getElements(selector) {
+  return Array.prototype.slice.call(document.querySelectorAll(selector), 0)
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   // Get all "navbar-burger" elements
-  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0)
+  const $navbarBurgers = getElements('.navbar-burger')
 
   // Check if there are any navbar burgers
   if ($navbarBurgers.length > 0) {
@@ -28,9 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
-  const $inputs = Array.prototype.slice.call(document.querySelectorAll('input[type=text]'), 0)
-  const $textareas = Array.prototype.slice.call(document.querySelectorAll('textarea'), 0)
-  const $inputLabels = Array.prototype.slice.call(document.querySelectorAll('.field label'), 0)
+  const $inputs = getElements('input[type=text]')
+  const $textareas = getElements('textarea')
+  const $inputLabels = getElements('.field label')
 
   if ($inputs.length > 0) {
     $inputs.forEach(el => {
@@ -49,4 +53,12 @@ document.addEventListener('DOMContentLoaded', () => {
       el.classList.toggle('label')
     })
   }
+
+  const navbarItems = getElements('a.navbar-item')
+
+  navbarItems.map(item => {
+    if (item.href === window.location.href) {
+      item.classList.toggle('is-active')
+    }
+  })
 })

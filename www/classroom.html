@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Delor Montessori School | In The Classroom</title>
+    {{> head}}
+  </head>
+
+  <body class="classroom" style="background-image: url(./images/clouds.png);">
+    {{> navigation}}
+    <section class="section">
+      {{#section classes multiple=true sortable=true}}
+        <div class="container">
+          <div class="title">{{title priority=1}}</div>
+          <div class="subtitle">{{subtitle priority=1}}</div>
+          <div class="content">{{description label="Class Description" type=html priority=2}}</div>
+        </div>
+      {{/section}}
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="title">School Administration</div>
+        {{#section administrators sortable=true}}
+          <div class="administrator">
+            <strong>{{name priority=1}} – {{title priority=2}}</strong>
+            <p>{{background long=true priority=3}}</p>
+          </div>
+        {{/section}}
+      </div>
+    </section>
+    {{> footer}}
+    {{> javascript}}
+  </body>
+</html>

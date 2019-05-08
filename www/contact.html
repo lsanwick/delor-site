@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Delor Montessori School | About</title>
+    <title>Delor Montessori School | Contact Us</title>
     {{> head}}
   </head>
-  <body style="background-image: url({{background_image type=image tag=false required=false}});">
+  <body style="background-image: url(./images/clouds.png);">
     {{> navigation}}
     {{#section contact label="Contact Page"}}
     <section class="section">
@@ -17,9 +17,9 @@
             <h1 class="title">{{ title }}</h1>
             <div class="content">{{info type=html }}</div>
             {{#form contact_us subject="Contact Delor" submit="Send Message"}}
-            {{ name class="input"}}
-            {{ email }}
-            {{message long=true}}
+              {{ name class="input"}}
+              {{ email }}
+              {{message long=true}}
             {{/form}}
           </div>
         </div>

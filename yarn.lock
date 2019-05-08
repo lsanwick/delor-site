@@ -30,10 +30,10 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@vapid/cli@^0.7.7":
-  version "0.7.7"
-  resolved "https://registry.yarnpkg.com/@vapid/cli/-/cli-0.7.7.tgz#edd41f149bb37d24280656ed9f2dc2f042fa190b"
-  integrity sha512-ZnmpTCWS6kThk74t3NGh2GwiMygcOzQyV+DYxdDVV3/PSXJpvflIikOzqJn4ZQ+iWZiQUJ/OSn6i18tTgYBIwg==
+"@vapid/cli@^0.8.1":
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/@vapid/cli/-/cli-0.8.1.tgz#f18014586c0f1da228ce1784919849e2ebf65f79"
+  integrity sha512-D1AC4bE+fGuX9Rxssk9ZVBWcxupVfd/mJXSO0C1FEDtmI9GgMxA1sQHbKS/RtUkYnDztAhbSwHZMbWaTBwc/bQ==
   dependencies:
     ace-builds "^1.4.3"
     animated-gif-detector "^1.2.0"
@@ -82,7 +82,7 @@
     sanitize-html "^1.18.2"
     sass "^1.14.3"
     sass-loader "^7.1.0"
-    sequelize "^4.42.0"
+    sequelize "^4.43.2"
     sharp "^0.21.0"
     sqlite3 "^4.0.0"
     strftime "^0.10.0"
@@ -5498,10 +5498,10 @@ semver@^5.0.3, semver@^5.1.0, semver@^5.3.0, semver@^5.4.1, semver@^5.5.0, semve
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.0.tgz#790a7cf6fea5459bac96110b29b60412dc8ff96b"
   integrity sha512-Ya52jSX2u7QKghxeoFGpLwCtGlt7j0oY9DYb5apt9nPlJ42ID+ulTXESnt/qAQcoSERyZ5sl3LDIOw0nAn/5DA==
 
-sequelize@^4.42.0:
-  version "4.43.1"
-  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-4.43.1.tgz#90afc7383469b6ae3bc76e189c92b62a0c1fda16"
-  integrity sha512-c3FSv/UWu0yjQ0ClMTIABKLto+1ppkLc9pb5sPyl0mfYoWri5oyXbgwclys1Mdr2of6Tdg/i3xMme3uzY05TAw==
+sequelize@^4.43.2:
+  version "4.43.2"
+  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-4.43.2.tgz#688e2579c64eb7e8de348941544ff2893db8eed6"
+  integrity sha512-EA3V1AsxVjf2EtGbdEoa9Fe5rSAqy5g4OsX0VwtU6iMezTjIYTCXV8o6mG7i6u3lu4Zc7JWZ6XwhS0k79pT/EQ==
   dependencies:
     bluebird "^3.5.0"
     cls-bluebird "^2.1.0"

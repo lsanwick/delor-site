@@ -3,6 +3,8 @@ $family-sans-serif: 'Ubuntu', sans-serif;
 $blue: #2982d0;
 $sky-blue: #8fe0f9;
 $pink: #ff8282;
+$red: #ff817f;
+$green: #9ad4a3;
 $primary: $sky-blue;
 $background: lighten($sky-blue, 10%);
 $border: $sky-blue;
@@ -31,4 +33,15 @@ body {
 
 .navbar-brand {
   font-family: 'Pacifico', cursive;
+}
+
+.administrator + .administrator {
+  margin-top: 1rem;
+}
+
+.classroom {
+  .subtitle {
+    padding-bottom: 0.5rem;
+    border-bottom: 0.5rem solid $sky-blue;
+  }
 }
