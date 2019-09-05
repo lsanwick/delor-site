@@ -4,7 +4,8 @@
     "site": "ca7a169b-3ac8-43f0-b753-567d169998ad"
   },
   "scripts": {
-    "start": "vapid start ."
+    "start": "vapid start .",
+    "deploy": "vapid deploy"
   },
   "dependencies": {
     "@vapid/cli": "^0.8.1",
