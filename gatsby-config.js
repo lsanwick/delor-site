@@ -12,20 +12,20 @@ module.exports = {
   },
   pathPrefix: siteUrl ? siteUrl.pathname : '/',
   plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/pages`,
-        name: 'content',
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/data`,
-        name: 'data',
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     path: `${__dirname}/src/pages`,
+    //     name: 'content',
+    //   },
+    // },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     path: `${__dirname}/src/data`,
+    //     name: 'data',
+    //   },
+    // },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -51,13 +51,13 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
-    `gatsby-plugin-feed`,
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     //trackingId: `ADD YOUR TRACKING ID HERE`,
+    //   },
+    // },
+    // `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -72,12 +72,14 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    'gatsby-transformer-json',
     {
-      resolve: 'gatsby-plugin-typography',
+      resolve: 'gatsby-plugin-typescript', // Support source code written in Typescript
       options: {
-        pathToConfigModule: 'src/utils/typography',
+        isTSX: true,
+        allExtensions: true,
       },
     },
-    'gatsby-transformer-json',
+    'gatsby-plugin-sass',
   ],
 }

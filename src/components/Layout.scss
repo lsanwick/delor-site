@@ -1,0 +1,69 @@
+$family-sans-serif: 'Ubuntu', sans-serif;
+
+$blue: #2982d0;
+$sky-blue: #8fe0f9;
+$pink: #ff8282;
+$red: #ff817f;
+$green: #9ad4a3;
+$primary: $sky-blue;
+$background: lighten($sky-blue, 10%);
+$border: $sky-blue;
+
+$control-radius: 0;
+
+@import '~bulma/bulma';
+
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+body,
+#___gatsby {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+body {
+  background-color: $sky-blue;
+  background-attachment: fixed;
+  background-image: url('../assets/clouds.png');
+}
+
+#gatsby-focus-wrapper {
+  display: grid;
+  min-height: 100%;
+  position: relative;
+  grid-template-rows: auto 1fr auto;
+}
+
+.header-image-wrapper {
+  border: 0.5rem solid $pink;
+}
+
+.title {
+  color: #9CD3A5;
+}
+
+.container {
+  padding: 2rem;
+  background-color: $white;
+}
+
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+}
+
+.administrator + .administrator {
+  margin-top: 1rem;
+}
+
+.classroom {
+  .subtitle {
+    padding-bottom: 0.5rem;
+    border-bottom: 0.5rem solid $sky-blue;
+  }
+}
