@@ -7,7 +7,6 @@ sections:
 - type: document
   path: src/data/faqs.json
   label: FAQs
-  match: "**/*"
 - type: directory
   path: src/pages
   label: Pages

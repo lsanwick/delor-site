@@ -22,5 +22,5 @@ fields:
   config:
     min: 
     max: 
-    labelField: 
+    labelField: question
   label: FAQs
