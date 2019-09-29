@@ -1,4 +1,49 @@
 ---
 label: Class
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+  description: Name of this class program.
+- name: age_range
+  type: text
+  config:
+    required: true
+  label: Age Range
+  description: Age range of children in this class
+- name: head_teacher
+  type: text
+  config:
+    required: false
+  label: Head Teacher
+- name: support_staff
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Support Staff
+  description: List of support staff for this class.
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Description
+  description: Class description
+- name: head_teacher_background
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Head Teacher Background
+  description: Description of the Head Teacher's background and qualificiations
